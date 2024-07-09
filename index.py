@@ -12,18 +12,18 @@ print(iris.head())
 print(iris.shape)
 print(iris.info())
 
-# #plots wrt to different features
-# sns.scatterplot(iris, x='sepal_length', y='sepal_width', hue='species')
-# plt.show()
+#plots wrt to different features
+sns.scatterplot(iris, x='sepal_length', y='sepal_width', hue='species')
+plt.show()
 
-# sns.scatterplot(iris, x='petal_length', y='petal_width', hue='species')
-# plt.show()
+sns.scatterplot(iris, x='petal_length', y='petal_width', hue='species')
+plt.show()
 
-# sns.scatterplot(iris, x='sepal_length', y='petal_length', hue='species')
-# plt.show()
+sns.scatterplot(iris, x='sepal_length', y='petal_length', hue='species')
+plt.show()
 
-# sns.scatterplot(iris, x='sepal_width', y='petal_width', hue='species')
-# plt.show()
+sns.scatterplot(iris, x='sepal_width', y='petal_width', hue='species')
+plt.show()
 
 #I picked up two features from the “Iris” dataset and trained a KMeans model giving the n_clusters parameter the value of 3
 X = iris[['sepal_length', 'petal_length']].values
